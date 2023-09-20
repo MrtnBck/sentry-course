@@ -42,3 +42,4 @@ Sentry.configureScope((scope) => scope.setUser(null));
 //session start: open the app
 //session end: close the app, navigate to another tab in the browser
 //executor: Sentry.init()
+//releases page in sentry web
