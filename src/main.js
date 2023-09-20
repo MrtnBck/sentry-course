@@ -22,7 +22,8 @@ Sentry.init({
   // Set tracesSampleRate to 1.0 to capture 100%
   // of transactions for performance monitoring.
   // We recommend adjusting this value in production
-  tracesSampleRate: 1.0,
+  //Performance monitoring
+  tracesSampleRate: 0.2, //20% of the transaction will be send to sentry
 });
 
 app.use(router).mount("#app");
