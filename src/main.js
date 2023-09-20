@@ -12,6 +12,7 @@ Sentry.init({
   dsn: "https://4cc57cf92c6b3c0337b5aedb45db1d4a@o4505736699314176.ingest.sentry.io/4505736702459904",
   logErrors: true,
   release: __SENTRY_RELEASE__,
+  environment: import.meta.env.MODE, //development, production
   integrations: [
     new Integrations.BrowserTracing({
       routingInstrumentation: Sentry.vueRouterInstrumentation(router),
