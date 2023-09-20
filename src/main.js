@@ -35,3 +35,10 @@ const user = {
 Sentry.setUser(user);
 
 Sentry.configureScope((scope) => scope.setUser(null));
+
+//Sessions:
+//use sentry to monitor health
+//represents the interaction between the user and the application
+//session start: open the app
+//session end: close the app, navigate to another tab in the browser
+//executor: Sentry.init()
